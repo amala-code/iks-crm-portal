@@ -121,9 +121,9 @@ function App() {
         <Route 
           path="/photos" 
           element={
-            // <ProtectedRoute isAuthenticated={isAuthenticated}>
+            <ProtectedRoute isAuthenticated={isAuthenticated}>
               <PhotoGalleryForm onLogout={handleLogout} />
-            // </ProtectedRoute>
+            </ProtectedRoute>
           } 
         />
 
