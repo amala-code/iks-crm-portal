@@ -1,32 +1,4 @@
 
-// import React from 'react';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// import ContentForm from './components/ContentForm';
-// import ContentDashboard from './components/Dash';
-// import NewsForm from './components/NewsForm';
-// import EventForm from './components/event';
-// import PhotoGalleryForm from './components/Photgallery';
-// import LoginPage from './components/LoginPage';
-
-// function App() {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path="/dashboard" element={<ContentDashboard />} />
-//         <Route path="/login" element={<LoginPage />} />
-
-//         <Route path="/dashboard" element={<ContentDashboard />} />
-//         {/* <Route path="/news" element={<NewsForm />} /> */}
-//         <Route path="/events" element={<EventForm />} />
-//         <Route path="/photos" element={<PhotoGalleryForm />} />
-//       </Routes>
-//     </Router>
-//   );
-// }
-
-// export default App;
-
 
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
@@ -149,9 +121,9 @@ function App() {
         <Route 
           path="/photos" 
           element={
-            <ProtectedRoute isAuthenticated={isAuthenticated}>
+            // <ProtectedRoute isAuthenticated={isAuthenticated}>
               <PhotoGalleryForm onLogout={handleLogout} />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           } 
         />
 
